@@ -38,8 +38,8 @@ services:
       - DEBUG=False
       - DATABASE_URL=postgresql://raida_user:${POSTGRES_PASSWORD}@postgres:5432/raida
       - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
-      - ALLOWED_HOSTS=localhost,127.0.0.1,frontend
-      - CORS_ALLOW_ALL_ORIGINS=False
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS}
+      - CORS_ALLOW_ALL_ORIGINS=True
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - TEACHER_SUBJECT=${TEACHER_SUBJECT}
     depends_on:
