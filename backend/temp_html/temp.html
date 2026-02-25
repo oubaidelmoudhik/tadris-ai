@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الحصة 3 - الفترة 3</title>
+    <style>
+      :root {
+        --clr-dark: #495057;
+        --clr-light: #dee2e6;
+        --radius: 20px;
+        --padding-12: 12px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      @page {
+        size: A4;
+        margin: 0.6cm;
+      }
+      @font-face {
+        font-family: 'Cairo';
+        src: url('../static/fonts/Cairo-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Cairo';
+        src: url('../static/fonts/Cairo-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+      }
+      body {
+        font-size: 14px;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: 'Cairo', "DejaVu Sans", "Arial", sans-serif;
+        color: var(--clr-light);
+        direction: rtl;
+        text-align: right;
+      }
+      .font-heading {
+        font-weight: bold;
+        text-align: center;
+      }
+
+      /* ---------- HEADER ---------- */
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        direction: rtl;
+        width: 100%;
+      }
+
+      .header-left,
+      .header-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      header > section > div {
+        background-color: var(--clr-dark);
+        padding: var(--padding-12);
+        border-radius: var(--radius);
+        direction: rtl;
+        text-align: right;
+      }
+
+      .header-left-info {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 0px;
+        border-radius: 15px;
+        direction: rtl;
+      }
+
+      .header-left-info > div {
+        background-color: var(--clr-dark);
+        border-radius: var(--radius);
+        display: inline-block;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        padding: var(--padding-12);
+        direction: rtl;
+        justify-content: flex-start;
+      }
+
+      .header-right > div:last-child {
+        flex: 1;
+      }
+
+      /* ---------- MAIN ---------- */
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        direction: rtl;
+      }
+      
+      .main-section {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        direction: rtl;
+      }
+      
+      .main-section-heading {
+        background-color: var(--clr-dark);
+        border-radius: var(--radius);
+        padding: 10px;
+        direction: rtl;
+        text-align: right;
+      }
+      
+      .main-section > div:last-child {
+        background-color: var(--clr-light);
+        color: var(--clr-dark);
+        border-radius: 30px;
+        padding: 10px 10px 17px;
+        direction: rtl;
+        direction: rtl;
+        text-align: right;
+      }
+
+      /* ---------- TOP INFO ---------- */
+      .top-info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .mindmap-title {
+        background-color: var(--clr-dark);
+        color: var(--clr-light);
+        padding: 10px;
+        border-radius: var(--radius);
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 100%;
+      }
+
+      .teacher-info-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .teacher-info-grid > div {
+        background-color: var(--clr-dark);
+        border-radius: var(--radius);
+        padding: var(--padding-12);
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        width: 100%;
+        font-size: 11px;
+      }
+      
+      .teacher-info-label {
+        font-weight: bold; 
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-info-container">
+        <div class="mindmap-title">الخطاطة الذهنية</div>
+        
+        <div class="teacher-info-grid">
+            
+            <div><span class="teacher-info-label">الأستاذ:</span> <span>عبيد المضحك</span></div>
+            
+            <div><span class="teacher-info-label">رقم التأجير:</span> <span>2265660</span></div>
+            
+            <div><span class="teacher-info-label">السنة الدراسية:</span> <span>2025-2026</span></div>
+            
+            <div><span class="teacher-info-label">المؤسسة:</span> <span>م.ج. واد ملحة</span></div>
+            
+            <div><span class="teacher-info-label">المستوى:</span> <span>الخامس</span></div>
+            
+            <div><span class="teacher-info-label">المادة:</span> <span>الرياضيات</span></div>
+            
+        </div>
+        
+    </div>
+
+    <header>
+      <section class="header-right">
+        <div class="header-objectif font-heading">🎯 الأهداف:</div>
+        <div>أجد الخارج العشري لقسمة عدد صحيح على عدد صحيح</div>
+      </section>
+      <section class="header-left">
+       
+        <div class="header-left-info">
+          <div><span>الحصة:</span> <span>3</span></div>
+          <div><span>الأسبوع:</span> <span>2</span></div>
+          <div><span>الفترة:</span> <span>3</span></div>
+        </div>
+      </section>
+    </header>
+    <main>
+      
+      <div class="main-section">
+        <div class="main-section-heading font-heading">
+          📝 الافتتاح: 10min
+        </div>
+        <div>يبدأ التلاميذ بتصحيح الواجبات المنزلية، حيث يقومون بمراجعة الحلول مع المعلم. بعد ذلك، يقومون بحساب ذهني سريع لبعض العمليات البسيطة.</div>
+      </div>
+      
+      <div class="main-section">
+        <div class="main-section-heading font-heading">
+          📊 النمذجة: 15min
+        </div>
+        <div>ينتبهون للشرح الذي يقدمه المعلم حول كيفية إجراء قسمة عدد صحيح على عدد صحيح والخارج عشري، حيث يشاهدون فيديو توضيحي يشرح الخطوات اللازمة.</div>
+      </div>
+      
+      <div class="main-section">
+        <div class="main-section-heading font-heading">
+          ✏️ الممارسة الموجهة: 20min
+        </div>
+        <div>يشارك التلاميذ في نشاط موجه حيث يقومون بحل مسائل قسمة على الألواح. يتبعون الخطوات التي تم شرحها، ويقومون برفع الألواح لتصحيح الإجابات مع المعلم.</div>
+      </div>
+      
+      <div class="main-section">
+        <div class="main-section-heading font-heading">
+          🖊️ الممارسة المستقلة: 15min
+        </div>
+        <div>يبدأ التلاميذ بالعمل على نشاط مستقل في كراساتهم، حيث يقومون بحل مسائل قسمة بمفردهم. يتأكدون من اتباع الخطوات الصحيحة ويقارنون إنجازاتهم مع زملائهم.</div>
+      </div>
+      
+      <div class="main-section">
+        <div class="main-section-heading font-heading">
+          📅 اختتام الحصة: 10min
+        </div>
+        <div>يختتم المعلم الحصة بتذكير التلاميذ بإنجاز الأنشطة المتبقية في المنزل، ويخبرهم بأنه سيتم تصحيح هذه الأنشطة في الحصة القادمة.</div>
+      </div>
+      
+    </main>
+  </body>
+</html>
