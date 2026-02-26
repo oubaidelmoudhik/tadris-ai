@@ -43,7 +43,7 @@ EXPOSE 8000
 # Run development server
 CMD ["python", "manage.py", "runserver", "0.0.00"]
 
-# --------------------------------.0:800------------
+# --------------------------------------------
 # Production build stage
 # --------------------------------------------
 FROM base AS production
@@ -72,4 +72,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health/')" || exit 1
 
 # Run with Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "4", "--worker-class", "sync", "--timeout", "120", "config.asgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "4", "--worker-class", "sync", "--timeout", "120", "config.wsgi:application"]
